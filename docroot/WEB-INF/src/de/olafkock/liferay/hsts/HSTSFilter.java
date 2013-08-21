@@ -14,11 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HSTSFilter implements Filter {
 
-	@Override
+//	@Override
 	public void destroy() {
 	}
 
-	@Override
+//	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain filter) throws IOException, ServletException {
 		// run only if request comes through https
@@ -35,7 +35,7 @@ public class HSTSFilter implements Filter {
 		filter.doFilter(request, response);
 	}
 
-	@Override
+//	@Override
 	public void init(FilterConfig config) throws ServletException {
 		maxAge = Long.valueOf(config.getInitParameter("max-age"));
 		if(PropsUtil.contains("hsts-max-age")) {

@@ -41,7 +41,7 @@ public class HSTSFilter implements Filter {
 		if(PropsUtil.contains("hsts-max-age")) {
 			maxAge = Long.valueOf(PropsUtil.get("hsts-max-age"));
 		}
-		System.out.println("HSTS-Filter configured for max-age " + maxAge);
+//		System.out.println("HSTS-Filter configured for max-age " + maxAge);
 	}
 
 	long maxAge = 0L;

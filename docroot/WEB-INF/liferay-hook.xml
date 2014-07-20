@@ -2,18 +2,13 @@
 <!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
 
 <hook>
+	<language-properties>
+		content/Language.properties
+	</language-properties>
+	<custom-jsp-dir>/custom_jsps</custom-jsp-dir>
 	<servlet-filter>
 		<servlet-filter-name>HSTS-Filter</servlet-filter-name>
 		<servlet-filter-impl>de.olafkock.liferay.hsts.HSTSFilter</servlet-filter-impl>
-		<init-param>
-			<param-name>max-age</param-name>
-			<param-value>30</param-value>
-			<!-- configure this value by adding hsts-max-age=31536000 to your portal-ext.properties -->
-			<!-- the default value is 30 seconds, which makes no sense in production. If you accidentally -->
-			<!-- deploy this hook on a machine which you want to access through http, you'll only have --> 
-			<!-- to wait 30 seconds until this instruction expires -->
-			<!-- Note: 31536000 is one year (in seconds) - choose whatever duration is appropriate -->
-		</init-param>
 	</servlet-filter>
 	<servlet-filter-mapping>
 		<servlet-filter-name>HSTS-Filter</servlet-filter-name>

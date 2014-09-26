@@ -46,9 +46,6 @@ Boolean hstsIncludeSubdomain =
 		<p>
 			<liferay-ui:message key="hsts.configuration.help.certificate"/>
 		</p>
-		<p>
-			<liferay-ui:message key="hsts.configuration.help.certificate"/>
-		</p>		
 		<ul>
 			<li><a href="https://tools.ietf.org/html/rfc6797" target="_blank">RFC-6797</a></li>
 			<li><a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security" target="_blank">Wikipedia</a></li>

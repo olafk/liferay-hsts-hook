@@ -1,3 +1,8 @@
+Late edit in 2020:
+
+It's 2020, and I figured that unconditional HTTPS can safely be assumed. David Nebinger didn't think so and updated this plugin to Liferay 7.x - find [his forward-port here](https://github.com/dnebing/hsts). *This* repository won't be brought forward to 7.x, but rather stay as is.
+
+
 hsts-hook
 =========
 
